@@ -19,14 +19,8 @@ namespace Fwdays_PMLAB_Task
             
             Console.WriteLine("Phrase:");
 
-            foreach (var letter in fileText)
-            {
-                if (neededLettersSet.Contains(letter))
-                {
-                    Console.Write(letter);
-                }
-            }
-            
+            fileText.Where(neededLettersSet.Contains).ToList().ForEach(Console.Write);
+
             Console.ReadLine();
         }
 
