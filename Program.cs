@@ -8,7 +8,7 @@ namespace Fwdays_PMLAB_Task
 {
     class Program
     {
-        private const int SupposedLimit = 100;
+        private const int SupposedLimit = 10;
         
         static void Main(string[] args)
         {
